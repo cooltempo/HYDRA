@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AtomicPreset>
+  <Tag name="Punchy"/>
+  <MacroName displayName="Comp Ratio" index="0" />
+  <MacroName displayName="Feedback" index="1" />
+  <MacroName displayName="Delay Time" index="2" />
+  <MacroName displayName="-" index="3" />
+  <MacroName displayName="-" index="4" />
+  <MacroName displayName="-" index="5" />
+  <MacroName displayName="-" index="6" />
+  <MacroName displayName="-" index="7" />
+  <Processor name="Compressor" factory="Compressor">
+    <Parameter id="attack" value="1.859"/>
+    <Parameter id="release" value="173.834"/>
+    <Parameter id="pf_release" value="50.000"/>
+    <Parameter id="threshold" value="-7.112"/>
+    <Parameter id="ratio" value="40.115">
+      <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.946469664573669"
+                        default="0.3190150856971741"/>
+    </Parameter>
+    <Parameter id="knee" value="0.00"/>
+    <Parameter id="gain" value="0.000"/>
+    <Parameter id="mix" value="1.000"/>
+  </Processor>
+  <Processor name="Delay" factory="Delay">
+    <Parameter id="delayTime" value="3 / 16">
+      <ParameterRouting sourceModule="macroParam3" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"
+                        default="0.4000000059604645"/>
+    </Parameter>
+    <Parameter id="delayTimeMS" value="200.00"/>
+    <Parameter id="Sync Choice" value="Sync"/>
+    <Parameter id="feedback" value="0.500">
+      <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"
+                        default="0.5"/>
+    </Parameter>
+    <Parameter id="pingPong" value="On"/>
+    <Parameter id="rightGain" value="0.00"/>
+    <Parameter id="Mix" value="0.50"/>
+    <Parameter id="LPFCutoff" value="20.0k"/>
+    <Parameter id="HPFCutoff" value="20"/>
+  </Processor>
+</AtomicPreset>

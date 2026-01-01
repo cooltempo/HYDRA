@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Processor name="BSFX processor" factory="">
+  <Parameter id="show6dB" value="On"/>
+  <Parameter id="calcMode" value="Peak"/>
+  <Parameter id="rmsWindow" value="0.14"/>
+  <Parameter id="scaleMode" value="Decibel"/>
+  <Parameter id="min" value="-35.19"/>
+  <Parameter id="max" value="0.00"/>
+  <Parameter id="skew" value="0.916"/>
+  <Parameter id="attack" value="0.000"/>
+  <Parameter id="hold" value="30.874"/>
+  <Parameter id="release" value="301.850"/>
+</Processor>

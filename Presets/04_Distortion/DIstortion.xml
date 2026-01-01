@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AtomicPreset>
+    <MacroName displayName="Mix" index="0" />
+    <MacroName displayName="Drive" index="1" />
+    <MacroName displayName="Cutoff" index="2" />
+    <MacroName displayName="-" index="3" />
+    <MacroName displayName="-" index="4" />
+    <MacroName displayName="-" index="5" />
+    <MacroName displayName="-" index="6" />
+    <MacroName displayName="-" index="7" />
+  <Processor name="Distortion" factory="Distortion">
+    <Parameter id="outputgain" value="-44.02">
+      <ParameterRouting sourceModule="peakAmplitude" sourceFeature="0" averageType="0"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.5526140332221985"
+                        destMax="1.0" skew="0.6101462244987488" default="1.0"/>
+    </Parameter>
+    <Parameter id="mix" value="0.518"/>
+    <Parameter id="assymetric" value="1.000">
+      <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"/>
+    </Parameter>
+    <Parameter id="parallelizer" value="0.500"/>
+    <Parameter id="drive" value="25.000">
+      <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"
+                        default="0.5"/>
+    </Parameter>
+    <Parameter id="type1" value="Hard Clip"/>
+    <Parameter id="type2" value="Soft Clip"/>
+    <Parameter id="cutoff" value="20.0k">
+      <ParameterRouting sourceModule="macroParam3" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"
+                        default="1.0"/>
+    </Parameter>
+  </Processor>
+</AtomicPreset>

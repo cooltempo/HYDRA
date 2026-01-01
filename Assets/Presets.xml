@@ -1,0 +1,247 @@
+<AtomicPresets>
+  <Category name="Modulation">
+    <AtomicPreset name="HighChorus">
+      <Tag name="Wide" />
+      <MacroName displayName="Depth" index="0" />
+      <MacroName displayName="LFO Freq" index="1" />
+      <MacroName displayName="-" index="2" />
+      <MacroName displayName="-" index="3" />
+      <MacroName displayName="-" index="4" />
+      <MacroName displayName="-" index="5" />
+      <MacroName displayName="-" index="6" />
+      <MacroName displayName="-" index="7" />
+      <Processor name="Chorus" factory="Chorus">
+        <Parameter id="mix" value="0.50" />
+        <Parameter id="delay" value="1.73" />
+        <Parameter id="depth" value="2.14">
+          <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.02124086022377014" destMax="1.0" skew="1.0" default="0.4058363735675812" />
+        </Parameter>
+        <Parameter id="stereoPhase" value="45.00" />
+        <Parameter id="lfoFreq0" value="0.003">
+          <ParameterRouting sourceModule="frequencyBandHigh" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" default="0.7314684391021729" />
+        </Parameter>
+        <Parameter id="lfoFreq1" value="1.025">
+          <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.3240151107311249" destMax="0.6833160519599915" skew="1.0" default="0.5" />
+        </Parameter>
+        <Parameter id="lfoFreq2" value="1.000">
+          <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" default="0.5649093389511108" />
+        </Parameter>
+      </Processor>
+    </AtomicPreset>
+    <AtomicPreset name="LowChorus">
+      <Tag name="Narrow" />
+      <MacroName displayName="Depth" index="0" />
+      <MacroName displayName="LFO Freq" index="1" />
+      <MacroName displayName="-" index="2" />
+      <MacroName displayName="-" index="3" />
+      <MacroName displayName="-" index="4" />
+      <MacroName displayName="-" index="5" />
+      <MacroName displayName="-" index="6" />
+      <MacroName displayName="-" index="7" />
+      <Processor name="Chorus" factory="Chorus">
+        <Parameter id="delay" value="30.00" />
+        <Parameter id="depth" value="2.00">
+          <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" />
+        </Parameter>
+        <Parameter id="stereoPhase" value="45.00" />
+        <Parameter id="lfoFreq0" value="2.426">
+          <ParameterRouting sourceModule="frequencyBandLow" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.3544439077377319" destMax="0.6816034913063049" skew="1.0" />
+        </Parameter>
+        <Parameter id="lfoFreq1" value="1.000">
+          <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" />
+        </Parameter>
+        <Parameter id="lfoFreq2" value="1.000">
+          <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" />
+        </Parameter>
+      </Processor>
+    </AtomicPreset>
+  </Category>
+  <Category name="Delay">
+    <AtomicPreset name="LowRespondingDelay">
+      <Tag name="Soft" />
+      <Tag name="Low" />
+      <MacroName displayName="Delay Time" index="0" />
+      <MacroName displayName="-" index="1" />
+      <MacroName displayName="-" index="2" />
+      <MacroName displayName="-" index="3" />
+      <MacroName displayName="-" index="4" />
+      <MacroName displayName="-" index="5" />
+      <MacroName displayName="-" index="6" />
+      <MacroName displayName="-" index="7" />
+      <Processor name="Delay" factory="Delay">
+        <Parameter id="delayTime" value="1 / 16" />
+        <Parameter id="delayTimeMS" value="626.24">
+          <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" default="0.2000000029802322" />
+        </Parameter>
+        <Parameter id="Sync Choice" value="Free" />
+        <Parameter id="feedback" value="0.750">
+          <ParameterRouting sourceModule="frequencyBandLow" sourceFeature="0" averageType="1" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="0.7593675851821899" skew="2.127118825912476" default="0.4997778534889221" />
+        </Parameter>
+        <Parameter id="pingPong" value="On" />
+        <Parameter id="rightGain" value="0.00" />
+        <Parameter id="Mix" value="0.50" />
+        <Parameter id="LPFCutoff" value="3.1k" />
+        <Parameter id="HPFCutoff" value="40" />
+      </Processor>
+    </AtomicPreset>
+    <AtomicPreset name="PunchyDelay">
+      <Tag name="Punchy" />
+      <MacroName displayName="Comp Ratio" index="0" />
+      <MacroName displayName="Feedback" index="1" />
+      <MacroName displayName="Delay Time" index="2" />
+      <MacroName displayName="-" index="3" />
+      <MacroName displayName="-" index="4" />
+      <MacroName displayName="-" index="5" />
+      <MacroName displayName="-" index="6" />
+      <MacroName displayName="-" index="7" />
+      <Processor name="Compressor" factory="Compressor">
+        <Parameter id="attack" value="1.859" />
+        <Parameter id="release" value="173.834" />
+        <Parameter id="pf_release" value="50.000" />
+        <Parameter id="threshold" value="-7.112" />
+        <Parameter id="ratio" value="40.115">
+          <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.946469664573669" default="0.3190150856971741" />
+        </Parameter>
+        <Parameter id="knee" value="0.00" />
+        <Parameter id="gain" value="0.000" />
+        <Parameter id="mix" value="1.000" />
+      </Processor>
+      <Processor name="Delay" factory="Delay">
+        <Parameter id="delayTime" value="3 / 16">
+          <ParameterRouting sourceModule="macroParam3" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" default="0.4000000059604645" />
+        </Parameter>
+        <Parameter id="delayTimeMS" value="200.00" />
+        <Parameter id="Sync Choice" value="Sync" />
+        <Parameter id="feedback" value="0.500">
+          <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" default="0.5" />
+        </Parameter>
+        <Parameter id="pingPong" value="On" />
+        <Parameter id="rightGain" value="0.00" />
+        <Parameter id="Mix" value="0.50" />
+        <Parameter id="LPFCutoff" value="20.0k" />
+        <Parameter id="HPFCutoff" value="20" />
+      </Processor>
+    </AtomicPreset>
+  </Category>
+  <Category name="Reverb">
+    <AtomicPreset name="PeakRespinsiveWidth">
+      <Tag name="Mid" />
+      <Tag name="Punchy" />
+      <MacroName displayName="Reverb Mix" index="0" />
+      <MacroName displayName="Room Size" index="1" />
+      <MacroName displayName="Damping" index="2" />
+      <MacroName displayName="-" index="3" />
+      <MacroName displayName="-" index="4" />
+      <MacroName displayName="-" index="5" />
+      <MacroName displayName="-" index="6" />
+      <MacroName displayName="-" index="7" />
+      <Processor name="Reverb" factory="Reverb">
+        <Parameter id="Width" value="0.46">
+          <ParameterRouting sourceModule="peakAmplitude" sourceFeature="0" averageType="0" sourceMin="0.2446732968091965" sourceMax="1.0" destMin="1.0" destMax="0.405898243188858" skew="6.15265417098999" default="0.4995186626911163" />
+        </Parameter>
+        <Parameter id="Damping" value="0.55">
+          <ParameterRouting sourceModule="macroParam3" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" default="0.199999988079071" />
+        </Parameter>
+        <Parameter id="Mix" value="0.62">
+          <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" default="0.5" />
+        </Parameter>
+        <Parameter id="RoomSize" value="0.56">
+          <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.07990515232086182" destMax="1.0" skew="1.0" default="0.1666666567325592" />
+        </Parameter>
+        <Parameter id="PreDelayTime" value="0.0001000" />
+      </Processor>
+    </AtomicPreset>
+  </Category>
+  <Category name="Distortion">
+    <AtomicPreset name="Distortion">
+      <MacroName displayName="Mix" index="0" />
+      <MacroName displayName="Drive" index="1" />
+      <MacroName displayName="Cutoff" index="2" />
+      <MacroName displayName="-" index="3" />
+      <MacroName displayName="-" index="4" />
+      <MacroName displayName="-" index="5" />
+      <MacroName displayName="-" index="6" />
+      <MacroName displayName="-" index="7" />
+      <Processor name="Distortion" factory="Distortion">
+        <Parameter id="outputgain" value="-44.02">
+          <ParameterRouting sourceModule="peakAmplitude" sourceFeature="0" averageType="0" sourceMin="0.0" sourceMax="1.0" destMin="0.5526140332221985" destMax="1.0" skew="0.6101462244987488" default="1.0" />
+        </Parameter>
+        <Parameter id="mix" value="0.518" />
+        <Parameter id="assymetric" value="1.000">
+          <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" />
+        </Parameter>
+        <Parameter id="parallelizer" value="0.500" />
+        <Parameter id="drive" value="25.000">
+          <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" default="0.5" />
+        </Parameter>
+        <Parameter id="type1" value="Hard Clip" />
+        <Parameter id="type2" value="Soft Clip" />
+        <Parameter id="cutoff" value="20.0k">
+          <ParameterRouting sourceModule="macroParam3" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" default="1.0" />
+        </Parameter>
+      </Processor>
+    </AtomicPreset>
+  </Category>
+  <Category name="Filtering">
+    <AtomicPreset name="highCutMidResponsive">
+      <Tag name="Mid" />
+      <MacroName displayName="-" index="0" />
+      <MacroName displayName="-" index="1" />
+      <MacroName displayName="-" index="2" />
+      <MacroName displayName="-" index="3" />
+      <MacroName displayName="-" index="4" />
+      <MacroName displayName="-" index="5" />
+      <MacroName displayName="-" index="6" />
+      <MacroName displayName="-" index="7" />
+      <Processor name="Multimode Resonant Filter" factory="Multimode Resonant Filter">
+        <Parameter id="bypass" value="Off" />
+        <Parameter id="type" value="Low Pass Butterworth" />
+        <Parameter id="cutoff" value="648">
+          <ParameterRouting sourceModule="frequencyBandMid" sourceFeature="0" averageType="1" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" default="0.5663233995437622" />
+        </Parameter>
+        <Parameter id="slope" value="24" />
+        <Parameter id="q" value="1.000" />
+        <Parameter id="gain" value="+13.06" />
+        <Parameter id="crossFadeTime" value="0.014" />
+      </Processor>
+    </AtomicPreset>
+  </Category>
+  <Category name="Enhancement">
+    <AtomicPreset name="PitchShiftVolumeLinked">
+      <MacroName displayName="-" index="0" />
+      <MacroName displayName="-" index="1" />
+      <MacroName displayName="-" index="2" />
+      <MacroName displayName="-" index="3" />
+      <MacroName displayName="-" index="4" />
+      <MacroName displayName="-" index="5" />
+      <MacroName displayName="-" index="6" />
+      <MacroName displayName="-" index="7" />
+      <Processor name="PitchShiftSignalSmith" factory="PitchShiftSignalSmith">
+        <Parameter id="shiftCoarse" value="-2">
+          <ParameterRouting sourceModule="headroom" sourceFeature="0" averageType="0" sourceMin="0.0" sourceMax="1.0" destMin="0.3811193108558655" destMax="0.6342383623123169" skew="1.0" default="0.5" />
+        </Parameter>
+        <Parameter id="shiftFine" value="-0.377">
+          <ParameterRouting sourceModule="headroom" sourceFeature="0" averageType="0" sourceMin="0.0" sourceMax="0.9039385914802551" destMin="0.0" destMax="1.0" skew="1.0" default="0.5" />
+        </Parameter>
+      </Processor>
+    </AtomicPreset>
+    <AtomicPreset name="PitchShifter">
+      <MacroName displayName="Coarse" index="0" />
+      <MacroName displayName="Fine" index="1" />
+      <MacroName displayName="-" index="2" />
+      <MacroName displayName="-" index="3" />
+      <MacroName displayName="-" index="4" />
+      <MacroName displayName="-" index="5" />
+      <MacroName displayName="-" index="6" />
+      <MacroName displayName="-" index="7" />
+      <Processor name="PitchShiftSignalSmith" factory="PitchShiftSignalSmith">
+        <Parameter id="shiftCoarse" value="0">
+          <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" />
+        </Parameter>
+        <Parameter id="shiftFine" value="0.000">
+          <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2" sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0" />
+        </Parameter>
+      </Processor>
+    </AtomicPreset>
+  </Category>
+</AtomicPresets>

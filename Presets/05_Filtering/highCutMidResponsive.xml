@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AtomicPreset>
+  <Tag name="Mid"/>
+  <MacroName displayName="-" index="0" />
+  <MacroName displayName="-" index="1" />
+  <MacroName displayName="-" index="2" />
+  <MacroName displayName="-" index="3" />
+  <MacroName displayName="-" index="4" />
+  <MacroName displayName="-" index="5" />
+  <MacroName displayName="-" index="6" />
+  <MacroName displayName="-" index="7" />
+  <Processor name="Multimode Resonant Filter" factory="Multimode Resonant Filter">
+    <Parameter id="bypass" value="Off"/>
+    <Parameter id="type" value="Low Pass Butterworth"/>
+    <Parameter id="cutoff" value="648">
+      <ParameterRouting sourceModule="frequencyBandMid" sourceFeature="0" averageType="1"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"
+                        default="0.5663233995437622"/>
+    </Parameter>
+    <Parameter id="slope" value="24"/>
+    <Parameter id="q" value="1.000"/>
+    <Parameter id="gain" value="+13.06"/>
+    <Parameter id="crossFadeTime" value="0.014"/>
+  </Processor>
+</AtomicPreset>

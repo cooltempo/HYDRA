@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AtomicPreset>
+  <Tag name="Narrow"/>
+  <MacroName displayName="Depth" index="0" />
+  <MacroName displayName="LFO Freq" index="1" />
+  <MacroName displayName="-" index="2" />
+  <MacroName displayName="-" index="3" />
+  <MacroName displayName="-" index="4" />
+  <MacroName displayName="-" index="5" />
+  <MacroName displayName="-" index="6" />
+  <MacroName displayName="-" index="7" />
+  <Processor name="Chorus" factory="Chorus">
+    <Parameter id="delay" value="30.00"/>
+    <Parameter id="depth" value="2.00">
+      <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"/>
+    </Parameter>
+    <Parameter id="stereoPhase" value="45.00"/>
+    <Parameter id="lfoFreq0" value="2.426">
+      <ParameterRouting sourceModule="frequencyBandLow" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.3544439077377319"
+                        destMax="0.6816034913063049" skew="1.0"/>
+    </Parameter>
+    <Parameter id="lfoFreq1" value="1.000">
+      <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"/>
+    </Parameter>
+    <Parameter id="lfoFreq2" value="1.000">
+      <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"/>
+    </Parameter>
+  </Processor>
+</AtomicPreset>

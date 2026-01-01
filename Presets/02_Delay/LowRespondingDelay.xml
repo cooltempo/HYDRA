@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AtomicPreset>
+  <Tag name="Soft"/>
+  <Tag name="Low"/>
+  <MacroName displayName="Delay Time" index="0" />
+  <MacroName displayName="-" index="1" />
+  <MacroName displayName="-" index="2" />
+  <MacroName displayName="-" index="3" />
+  <MacroName displayName="-" index="4" />
+  <MacroName displayName="-" index="5" />
+  <MacroName displayName="-" index="6" />
+  <MacroName displayName="-" index="7" />
+  <Processor name="Delay" factory="Delay">
+    <Parameter id="delayTime" value="1 / 16"/>
+    <Parameter id="delayTimeMS" value="626.24">
+      <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"
+                        default="0.2000000029802322"/>
+    </Parameter>
+    <Parameter id="Sync Choice" value="Free"/>
+    <Parameter id="feedback" value="0.750">
+      <ParameterRouting sourceModule="frequencyBandLow" sourceFeature="0" averageType="1"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="0.7593675851821899"
+                        skew="2.127118825912476" default="0.4997778534889221"/>
+    </Parameter>
+    <Parameter id="pingPong" value="On"/>
+    <Parameter id="rightGain" value="0.00"/>
+    <Parameter id="Mix" value="0.50"/>
+    <Parameter id="LPFCutoff" value="3.1k"/>
+    <Parameter id="HPFCutoff" value="40"/>
+  </Processor>
+</AtomicPreset>

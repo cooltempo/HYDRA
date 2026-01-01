@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AtomicTags>
+  <SoundTag name="High">
+    <Feature analysisModule="frequencyBandHigh" featureIndex="0" rangeMin="0.5643175840377808"
+             rangeMax="1.0"/>
+  </SoundTag>
+  <SoundTag name="Low">
+    <Feature analysisModule="frequencyBandLow" featureIndex="0" rangeMin="0.550988495349884"
+             rangeMax="1.0"/>
+  </SoundTag>
+  <SoundTag name="Mid">
+    <Feature analysisModule="frequencyBandMid" featureIndex="0" rangeMin="0.5248246192932129"
+             rangeMax="1.0"/>
+  </SoundTag>
+  <SoundTag name="Narrow">
+    <Feature analysisModule="stereoSpread" featureIndex="0" rangeMin="0.0"
+             rangeMax="0.3595982193946838"/>
+  </SoundTag>
+  <SoundTag name="Punchy">
+    <Feature analysisModule="envelopeASR" featureIndex="0" rangeMin="0.0"
+             rangeMax="0.3115433752536774"/>
+    <Feature analysisModule="envelopeASR" featureIndex="2" rangeMin="0.0"
+             rangeMax="0.7867984771728516"/>
+    <Feature analysisModule="envelopeASR" featureIndex="1" rangeMin="0.0"
+             rangeMax="0.3218590617179871"/>
+  </SoundTag>
+  <SoundTag name="Soft">
+    <Feature analysisModule="envelopeASR" featureIndex="0" rangeMin="0.367378830909729"
+             rangeMax="1.0"/>
+  </SoundTag>
+  <SoundTag name="Wide">
+    <Feature analysisModule="stereoSpread" featureIndex="0" rangeMin="0.351945161819458"
+             rangeMax="1.0"/>
+  </SoundTag>
+</AtomicTags>

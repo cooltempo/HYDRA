@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AtomicPreset>
+    <MacroName displayName="-" index="0" />
+    <MacroName displayName="-" index="1" />
+    <MacroName displayName="-" index="2" />
+    <MacroName displayName="-" index="3" />
+    <MacroName displayName="-" index="4" />
+    <MacroName displayName="-" index="5" />
+    <MacroName displayName="-" index="6" />
+    <MacroName displayName="-" index="7" />
+  <Processor name="PitchShiftSignalSmith" factory="PitchShiftSignalSmith">
+    <Parameter id="shiftCoarse" value="-2">
+      <ParameterRouting sourceModule="headroom" sourceFeature="0" averageType="0" sourceMin="0.0"
+                        sourceMax="1.0" destMin="0.3811193108558655" destMax="0.6342383623123169"
+                        skew="1.0" default="0.5"/>
+    </Parameter>
+    <Parameter id="shiftFine" value="-0.377">
+      <ParameterRouting sourceModule="headroom" sourceFeature="0" averageType="0" sourceMin="0.0"
+                        sourceMax="0.9039385914802551" destMin="0.0" destMax="1.0" skew="1.0"
+                        default="0.5"/>
+    </Parameter>
+  </Processor>
+</AtomicPreset>

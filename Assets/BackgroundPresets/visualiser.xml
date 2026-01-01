@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Processor name="BSFX processor" factory="">
+  <Parameter id="paramCameraYPos" value="0.00"/>
+  <Parameter id="paramCameraZPos" value="5.35"/>
+  <Parameter id="paramCameraFOV" value="92.78"/>
+  <Parameter id="paramRotationSpeed" value="-12.40"/>
+  <Parameter id="paramNumParticles" value="2181"/>
+  <Parameter id="paramParticleSize" value="0.0404"/>
+  <Parameter id="paramParticleSizeRandomness" value="35.7"/>
+  <Parameter id="paramParticleSmoothness" value="0.7568"/>
+  <Parameter id="paramBackgroundFade" value="57.9"/>
+  <Parameter id="paramActivationThreshold" value="-50.36"/>
+  <Parameter id="paramActivationAttack" value="264.41"/>
+  <Parameter id="paramActivationRelease" value="751.56"/>
+  <Parameter id="paramBaseRadius" value="2.44"/>
+  <Parameter id="paramMovementStype" value="0.1983"/>
+  <Parameter id="paramSnappySpeed" value="145.8"/>
+  <Parameter id="paramForceScale" value="11.9240"/>
+  <Parameter id="paramDampingFactor" value="0.5818"/>
+  <Parameter id="paramJitterAmount" value="50.0000"/>
+  <Parameter id="paramEscapeSpeedMultiplier" value="0.3722"/>
+  <Parameter id="paramEscapeDuration" value="1.446"/>
+  <Parameter id="paramMouseEffectRadius" value="0.5155"/>
+  <Parameter id="paramMouseRepulsion" value="20.3147"/>
+  <Parameter id="paramMouseEffectDuration" value="3.428"/>
+  <Parameter id="paramHorizontalBandSize" value="12.1"/>
+  <Parameter id="paramVerticalBandSize" value="12.4"/>
+  <Parameter id="paramBandSmoothness" value="1.5094"/>
+  <Parameter id="regionColours[Core].red" value="0.976"/>
+  <Parameter id="regionColours[Core].green" value="0.976"/>
+  <Parameter id="regionColours[Core].blue" value="0.976"/>
+  <Parameter id="regionColours[Core].alpha" value="1.000"/>
+  <Parameter id="paramRegionRadiusMod[Core]" value="+7.8"/>
+  <Parameter id="regionColours[Equator].red" value="0.000"/>
+  <Parameter id="regionColours[Equator].green" value="1.000"/>
+  <Parameter id="regionColours[Equator].blue" value="1.000"/>
+  <Parameter id="regionColours[Equator].alpha" value="1.000"/>
+  <Parameter id="paramRegionRadiusMod[Equator]" value="+38.2">
+    <ParameterRouting sourceModule="stereoSpread" sourceFeature="0" averageType="0"
+                      sourceMin="0.0" sourceMax="0.5470128655433655" destMin="0.3364309072494507"
+                      destMax="1.0" skew="0.4242595136165619"/>
+  </Parameter>
+  <Parameter id="regionColours[Meridian].red" value="0.000"/>
+  <Parameter id="regionColours[Meridian].green" value="0.961"/>
+  <Parameter id="regionColours[Meridian].blue" value="0.482"/>
+  <Parameter id="regionColours[Meridian].alpha" value="1.000"/>
+  <Parameter id="paramRegionRadiusMod[Meridian]" value="+8.5">
+    <ParameterRouting sourceModule="peakAmplitude" sourceFeature="0" averageType="0"
+                      sourceMin="0.1683593690395355" sourceMax="0.5257582664489746"
+                      destMin="0.0" destMax="1.0" skew="0.7348533272743225"/>
+  </Parameter>
+  <Parameter id="regionColours[North].red" value="0.447"/>
+  <Parameter id="regionColours[North].green" value="0.498"/>
+  <Parameter id="regionColours[North].blue" value="1.000"/>
+  <Parameter id="regionColours[North].alpha" value="1.000"/>
+  <Parameter id="paramRegionRadiusMod[North]" value="+39.3">
+    <ParameterRouting sourceModule="frequencyBandHigh" sourceFeature="0" averageType="0"
+                      sourceMin="0.0" sourceMax="0.2228630483150482" destMin="0.0"
+                      destMax="1.0" skew="0.4024273455142975"/>
+  </Parameter>
+  <Parameter id="regionColours[South].red" value="1.000"/>
+  <Parameter id="regionColours[South].green" value="0.424"/>
+  <Parameter id="regionColours[South].blue" value="0.188"/>
+  <Parameter id="regionColours[South].alpha" value="1.000"/>
+  <Parameter id="paramRegionRadiusMod[South]" value="0.0">
+    <ParameterRouting sourceModule="frequencyBandLow" sourceFeature="0" averageType="0"
+                      sourceMin="0.001700367662124336" sourceMax="1.0" destMin="0.0"
+                      destMax="1.0" skew="2.191742181777954"/>
+  </Parameter>
+</Processor>

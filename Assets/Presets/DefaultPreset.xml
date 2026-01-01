@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AtomicPreset>
+  <Tag name="low"/>
+  <Tag name="high pitched"/>
+  <Tag name="punchy"/>
+  <MacroName displayName="name1" index="0" />
+  <MacroName displayName="name2" index="1" />
+  <MacroName displayName="name3" index="2" />
+  <MacroName displayName="name4" index="3" />
+  <MacroName displayName="name5" index="4" />
+  <MacroName displayName="name6" index="5" />
+  <MacroName displayName="name7" index="6" />
+  <MacroName displayName="name8" index="7" />
+  <Processor name="Chorus" factory="Chorus">
+    <Parameter id="delay" value="10.00">
+      <ParameterRouting sourceModule="macroParam1" sourceFeature="0" sourceMin="0.0"
+                        sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"/>
+    </Parameter>
+    <Parameter id="depth" value="2.00">
+      <ParameterRouting sourceModule="macroParam2" sourceFeature="0" sourceMin="0.0"
+                        sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"/>
+    </Parameter>
+    <Parameter id="stereoPhase" value="0.00">
+      <ParameterRouting sourceModule="macroParam3" sourceFeature="0" sourceMin="0.0"
+                        sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"/>
+    </Parameter>
+    <Parameter id="lfoFreq0" value="1.000">
+      <ParameterRouting sourceModule="macroParam4" sourceFeature="0" sourceMin="0.0"
+                        sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"/>
+    </Parameter>
+    <Parameter id="lfoFreq1" value="1.000"/>
+    <Parameter id="lfoFreq2" value="1.500"/>
+  </Processor>
+</AtomicPreset>

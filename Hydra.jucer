@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="eVFAKR" name="Hydra" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" defines="HYDRA_ENABLE_DEV_MODE=1&#10;HYDRA_GENERATE_DEV_TEST_PRESETS=0"
+              headerPath="../../glm&#10;" companyName="Atomic Audio" pluginManufacturerCode="Atom"
+              pluginCode="Hydr">
+  <MAINGROUP id="fjDPMM" name="Hydra">
+    <GROUP id="{A3A33C56-4656-5176-F66D-FEBE92A5AEE7}" name="Assets">
+      <GROUP id="{756F970F-8349-3E60-3BB1-4BB729C132F0}" name="BackgroundPresets">
+        <FILE id="gGSJ9N" name="meter.xml" compile="0" resource="1" file="Assets/BackgroundPresets/meter.xml"/>
+        <FILE id="llTwGI" name="visualiser.xml" compile="0" resource="1" file="Assets/BackgroundPresets/visualiser.xml"/>
+      </GROUP>
+      <GROUP id="{B56233CD-B3EB-FA7C-9574-BB6AB48F5DDA}" name="Fonts">
+        <GROUP id="{C7BCC7DE-1B38-9E5E-EDCB-15B68DA8EFD1}" name="Inter">
+          <GROUP id="{347AC6DC-E80C-A8F1-FE79-54E85D32EBB2}" name="static">
+            <FILE id="ey3fLA" name="Inter-Black.ttf" compile="0" resource="1" file="Assets/Fonts/Inter/static/Inter-Black.ttf"/>
+            <FILE id="ZU5voY" name="Inter-Bold.ttf" compile="0" resource="1" file="Assets/Fonts/Inter/static/Inter-Bold.ttf"/>
+            <FILE id="WxQ3Hb" name="Inter-ExtraBold.ttf" compile="0" resource="1"
+                  file="Assets/Fonts/Inter/static/Inter-ExtraBold.ttf"/>
+            <FILE id="xBj7ii" name="Inter-ExtraLight.ttf" compile="0" resource="1"
+                  file="Assets/Fonts/Inter/static/Inter-ExtraLight.ttf"/>
+            <FILE id="hclxEc" name="Inter-Light.ttf" compile="0" resource="1" file="Assets/Fonts/Inter/static/Inter-Light.ttf"/>
+            <FILE id="oBru2j" name="Inter-Medium.ttf" compile="0" resource="1"
+                  file="Assets/Fonts/Inter/static/Inter-Medium.ttf"/>
+            <FILE id="NDnucB" name="Inter-Regular.ttf" compile="0" resource="1"
+                  file="Assets/Fonts/Inter/static/Inter-Regular.ttf"/>
+            <FILE id="o128Ek" name="Inter-SemiBold.ttf" compile="0" resource="1"
+                  file="Assets/Fonts/Inter/static/Inter-SemiBold.ttf"/>
+            <FILE id="Jeode7" name="Inter-Thin.ttf" compile="0" resource="1" file="Assets/Fonts/Inter/static/Inter-Thin.ttf"/>
+          </GROUP>
+          <FILE id="Zl1rQy" name="Inter-VariableFont_slnt,wght.ttf" compile="0"
+                resource="1" file="Assets/Fonts/Inter/Inter-VariableFont_slnt,wght.ttf"/>
+          <FILE id="N2e1fu" name="OFL.txt" compile="0" resource="1" file="Assets/Fonts/Inter/OFL.txt"/>
+          <FILE id="J1NJ96" name="README.txt" compile="0" resource="1" file="Assets/Fonts/Inter/README.txt"/>
+        </GROUP>
+        <GROUP id="{878DA6B7-0B7A-EC9C-194C-5A2385394090}" name="subway_ticker">
+          <FILE id="hQPyir" name="SubwayTicker_ReadMe.txt" compile="0" resource="1"
+                file="Assets/Fonts/subway_ticker/SubwayTicker_ReadMe.txt"/>
+          <FILE id="icORxS" name="SubwayTickerGrid.ttf" compile="0" resource="1"
+                file="Assets/Fonts/subway_ticker/SubwayTickerGrid.ttf"/>
+          <FILE id="A3YzW1" name="SUBWT___.ttf" compile="0" resource="1" file="Assets/Fonts/subway_ticker/SUBWT___.ttf"/>
+        </GROUP>
+      </GROUP>
+      <GROUP id="{68500CB6-8095-8D77-0314-71FFB67775A9}" name="Presets">
+        <FILE id="xc9V4q" name="DefaultPreset.xml" compile="0" resource="1"
+              file="Assets/Presets/DefaultPreset.xml"/>
+        <FILE id="tQ9ZGj" name="tags.xml" compile="0" resource="1" file="Assets/Presets/tags.xml"/>
+      </GROUP>
+      <GROUP id="{21487020-94D4-4D52-E955-B4C7CAA6F81C}" name="Shaders">
+        <FILE id="XK7oXx" name="Particle_frag.glsl" compile="0" resource="1"
+              file="Assets/Shaders/Particle_frag.glsl"/>
+        <FILE id="f5P0aL" name="Particle_vert.glsl" compile="0" resource="1"
+              file="Assets/Shaders/Particle_vert.glsl"/>
+        <FILE id="giv4tp" name="ScreenQuadImage_frag.glsl" compile="0" resource="1"
+              file="Assets/Shaders/ScreenQuadImage_frag.glsl"/>
+        <FILE id="zndSUa" name="ScreenQuadImage_vert.glsl" compile="0" resource="1"
+              file="Assets/Shaders/ScreenQuadImage_vert.glsl"/>
+      </GROUP>
+      <FILE id="HyA1lO" name="atomicIcon.svg" compile="0" resource="1" file="Assets/atomicIcon.svg"/>
+      <FILE id="eh91mm" name="AtomicText.png" compile="0" resource="1" file="Assets/AtomicText.png"/>
+      <FILE id="sqShYu" name="Background.png" compile="0" resource="1" file="Assets/Background.png"/>
+      <FILE id="qwhUq3" name="Button.png" compile="0" resource="1" file="Assets/Button.png"/>
+      <FILE id="EQq4Y3" name="BypassText.png" compile="0" resource="1" file="Assets/BypassText.png"/>
+      <FILE id="fRwRUP" name="FreezeText.png" compile="0" resource="1" file="Assets/FreezeText.png"/>
+      <FILE id="RHy8Zr" name="InputText.png" compile="0" resource="1" file="Assets/InputText.png"/>
+      <FILE id="TUn2x2" name="Knob.png" compile="0" resource="1" file="Assets/Knob.png"/>
+      <FILE id="ApwT2i" name="KnobDisplayBg.png" compile="0" resource="1"
+            file="Assets/KnobDisplayBg.png"/>
+      <FILE id="lLECeA" name="LEDoff.png" compile="0" resource="1" file="Assets/LEDoff.png"/>
+      <FILE id="Fw6Lql" name="LEDon.png" compile="0" resource="1" file="Assets/LEDon.png"/>
+      <FILE id="zvshea" name="MacroMapText.png" compile="0" resource="1"
+            file="Assets/MacroMapText.png"/>
+      <FILE id="IZB0vb" name="MixText.png" compile="0" resource="1" file="Assets/MixText.png"/>
+      <FILE id="n1da74" name="NextIcon.svg" compile="0" resource="1" file="Assets/NextIcon.svg"/>
+      <FILE id="y7uO9D" name="OutputText.png" compile="0" resource="1" file="Assets/OutputText.png"/>
+      <FILE id="captUG" name="Presets.xml" compile="0" resource="1" file="Assets/Presets.xml"/>
+      <FILE id="VF65eC" name="PrevIcon.svg" compile="0" resource="1" file="Assets/PrevIcon.svg"/>
+      <FILE id="BSMQ0d" name="SaveIcon.svg" compile="0" resource="1" file="Assets/SaveIcon.svg"/>
+      <FILE id="CfjU9P" name="SearchIcon.svg" compile="0" resource="1" file="Assets/SearchIcon.svg"/>
+      <FILE id="tqaMcS" name="SettingsIcon.svg" compile="0" resource="1"
+            file="Assets/SettingsIcon.svg"/>
+    </GROUP>
+    <GROUP id="{51BE0F32-15E0-43B7-BE7F-0535BD36E773}" name="atomicengine">
+      <GROUP id="{E10E601F-C376-A6DA-D918-82F3697D29D4}" name="Analysis">
+        <FILE id="epRt9P" name="Amplitude.h" compile="0" resource="0" file="atomicengine/Analysis/Amplitude.h"/>
+        <FILE id="GEoU6z" name="AnalysisModule.h" compile="0" resource="0"
+              file="atomicengine/Analysis/AnalysisModule.h"/>
+        <FILE id="gdfEK2" name="Envelope.h" compile="0" resource="0" file="atomicengine/Analysis/Envelope.h"/>
+        <FILE id="XmkNI4" name="Frequency.h" compile="0" resource="0" file="atomicengine/Analysis/Frequency.h"/>
+        <FILE id="TJSD80" name="Stereo.h" compile="0" resource="0" file="atomicengine/Analysis/Stereo.h"/>
+      </GROUP>
+      <GROUP id="{B119CDDF-3B8C-7CE9-DD98-14F54B4688A3}" name="bsfx">
+        <FILE id="fV813A" name="BandEQ.h" compile="0" resource="0" file="atomicengine/bsfx/BandEQ.h"/>
+        <FILE id="cSSkXI" name="BandEQComponent.cpp" compile="1" resource="0"
+              file="atomicengine/bsfx/BandEQComponent.cpp"/>
+        <FILE id="VqTTQ4" name="BandEQComponent.h" compile="0" resource="0"
+              file="atomicengine/bsfx/BandEQComponent.h"/>
+        <FILE id="wN9ruc" name="BitCrusher.h" compile="0" resource="0" file="atomicengine/bsfx/BitCrusher.h"/>
+        <FILE id="h6DZ2R" name="Chorus.h" compile="0" resource="0" file="atomicengine/bsfx/Chorus.h"/>
+        <FILE id="KUWg5V" name="Compressor.h" compile="0" resource="0" file="atomicengine/bsfx/Compressor.h"/>
+        <FILE id="QADYYZ" name="CompressorEditor.cpp" compile="1" resource="0"
+              file="atomicengine/bsfx/CompressorEditor.cpp"/>
+        <FILE id="uta6Ur" name="CompressorEditor.h" compile="0" resource="0"
+              file="atomicengine/bsfx/CompressorEditor.h"/>
+        <FILE id="j9RLT0" name="CrossFadeStack.h" compile="0" resource="0"
+              file="atomicengine/bsfx/CrossFadeStack.h"/>
+        <FILE id="UdT68q" name="Delay.h" compile="0" resource="0" file="atomicengine/bsfx/Delay.h"/>
+        <FILE id="WGsgCJ" name="Distortion.h" compile="0" resource="0" file="atomicengine/bsfx/Distortion.h"/>
+        <FILE id="TDP0Ba" name="GainDB.h" compile="0" resource="0" file="atomicengine/bsfx/GainDB.h"/>
+        <FILE id="dZ29F9" name="Graph.h" compile="0" resource="0" file="atomicengine/bsfx/Graph.h"/>
+        <FILE id="H8NTqm" name="Graph_DebugOutput.cpp" compile="1" resource="0"
+              file="atomicengine/bsfx/Graph_DebugOutput.cpp"/>
+        <FILE id="Rfyssn" name="IIRFilter.cpp" compile="1" resource="0" file="atomicengine/bsfx/IIRFilter.cpp"/>
+        <FILE id="eU2iEZ" name="IIRFilter.h" compile="0" resource="0" file="atomicengine/bsfx/IIRFilter.h"/>
+        <FILE id="G7BgF0" name="Parameters.h" compile="0" resource="0" file="atomicengine/bsfx/Parameters.h"/>
+        <FILE id="GKvOEH" name="PhaseInverter.h" compile="0" resource="0" file="atomicengine/bsfx/PhaseInverter.h"/>
+        <FILE id="fmPDs2" name="Phaser.h" compile="0" resource="0" file="atomicengine/bsfx/Phaser.h"/>
+        <FILE id="pPI0fI" name="PitchShifter.h" compile="0" resource="0" file="atomicengine/bsfx/PitchShifter.h"/>
+        <FILE id="G2tuOF" name="PitchShiftSignalSmith.h" compile="0" resource="0"
+              file="atomicengine/bsfx/PitchShiftSignalSmith.h"/>
+        <FILE id="gc6mXb" name="Processor.cpp" compile="1" resource="0" file="atomicengine/bsfx/Processor.cpp"/>
+        <FILE id="I6t1PF" name="Processor.h" compile="0" resource="0" file="atomicengine/bsfx/Processor.h"/>
+        <FILE id="pSrP7o" name="ProcessorFactory.cpp" compile="1" resource="0"
+              file="atomicengine/bsfx/ProcessorFactory.cpp"/>
+        <FILE id="f3kKKh" name="ProcessorFactory.h" compile="0" resource="0"
+              file="atomicengine/bsfx/ProcessorFactory.h"/>
+        <FILE id="PDqXH7" name="Reverb.h" compile="0" resource="0" file="atomicengine/bsfx/Reverb.h"/>
+        <FILE id="z3HzTP" name="SetParameterValue.h" compile="0" resource="0"
+              file="atomicengine/bsfx/SetParameterValue.h"/>
+        <FILE id="w9wHyd" name="VolumeMeter.h" compile="0" resource="0" file="atomicengine/bsfx/VolumeMeter.h"/>
+        <FILE id="tgigWW" name="VolumeMeterComponent.cpp" compile="1" resource="0"
+              file="atomicengine/bsfx/VolumeMeterComponent.cpp"/>
+        <FILE id="xJjfQ6" name="VolumeMeterComponent.h" compile="0" resource="0"
+              file="atomicengine/bsfx/VolumeMeterComponent.h"/>
+      </GROUP>
+      <GROUP id="{3A18B7B6-CF84-0A9D-EE19-AA70EF0F44EA}" name="pffft">
+        <FILE id="lHpw2D" name="fftpack.c" compile="1" resource="0" file="atomicengine/pffft/fftpack.c"/>
+        <FILE id="xhBjVt" name="fftpack.h" compile="0" resource="0" file="atomicengine/pffft/fftpack.h"/>
+        <FILE id="OZQ8Sm" name="pffft.c" compile="1" resource="0" file="atomicengine/pffft/pffft.c"/>
+        <FILE id="fEqhb1" name="pffft.h" compile="0" resource="0" file="atomicengine/pffft/pffft.h"/>
+        <FILE id="FdA7sd" name="README.md" compile="0" resource="1" file="atomicengine/pffft/README.md"/>
+        <FILE id="BmwPMf" name="test_pffft.c" compile="1" resource="0" file="atomicengine/pffft/test_pffft.c"/>
+      </GROUP>
+      <GROUP id="{E2411EA3-FED2-8995-1E65-37209CCFFC54}" name="pitchshiftlibrary">
+        <GROUP id="{81E107A4-504A-6F4D-C8AD-06E4276D5652}" name="dsp">
+          <FILE id="lWjx3y" name="common.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/common.h"/>
+          <FILE id="BZ94HK" name="curves.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/curves.h"/>
+          <FILE id="iAULS6" name="delay.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/delay.h"/>
+          <FILE id="raHn5X" name="envelopes.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/envelopes.h"/>
+          <FILE id="wd75om" name="fft.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/fft.h"/>
+          <FILE id="aSlVam" name="filters.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/filters.h"/>
+          <FILE id="aL5lE6" name="LICENSE.txt" compile="0" resource="1" file="atomicengine/pitchshiftlibrary/dsp/LICENSE.txt"/>
+          <FILE id="hYdH64" name="mix.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/mix.h"/>
+          <FILE id="XLC1a4" name="perf.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/perf.h"/>
+          <FILE id="BWdSwP" name="rates.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/rates.h"/>
+          <FILE id="iVe1P7" name="README.md" compile="0" resource="1" file="atomicengine/pitchshiftlibrary/dsp/README.md"/>
+          <FILE id="k7mbAu" name="spectral.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/spectral.h"/>
+          <FILE id="tSqEH4" name="windows.h" compile="0" resource="0" file="atomicengine/pitchshiftlibrary/dsp/windows.h"/>
+        </GROUP>
+        <FILE id="AOwnVp" name="LICENSE.txt" compile="0" resource="1" file="atomicengine/pitchshiftlibrary/LICENSE.txt"/>
+        <FILE id="XIdMm4" name="README.md" compile="0" resource="1" file="atomicengine/pitchshiftlibrary/README.md"/>
+        <FILE id="GWouWO" name="signalsmith-stretch.h" compile="0" resource="0"
+              file="atomicengine/pitchshiftlibrary/signalsmith-stretch.h"/>
+      </GROUP>
+      <FILE id="Pe9fcw" name="AlignedBuffer.h" compile="0" resource="0" file="atomicengine/AlignedBuffer.h"/>
+      <FILE id="qT2SSA" name="AnalysisBuffer.h" compile="0" resource="0"
+            file="atomicengine/AnalysisBuffer.h"/>
+      <FILE id="urb4LA" name="AnalysisFifo.cpp" compile="1" resource="0"
+            file="atomicengine/AnalysisFifo.cpp"/>
+      <FILE id="XGYhvO" name="AnalysisFifo.h" compile="0" resource="0" file="atomicengine/AnalysisFifo.h"/>
+      <FILE id="LaLiOJ" name="AtomicEngine.cpp" compile="1" resource="0"
+            file="atomicengine/AtomicEngine.cpp"/>
+      <FILE id="AZnVbt" name="AtomicEngine.h" compile="0" resource="0" file="atomicengine/AtomicEngine.h"/>
+      <FILE id="X2xAhO" name="Average.h" compile="0" resource="0" file="atomicengine/Average.h"/>
+      <FILE id="ltZvVM" name="EnvelopeFollower.h" compile="0" resource="0"
+            file="atomicengine/EnvelopeFollower.h"/>
+      <FILE id="kSZy67" name="FFTEngine_pffft.cpp" compile="1" resource="0"
+            file="atomicengine/FFTEngine_pffft.cpp"/>
+      <FILE id="ZbdfVg" name="FFTEngine_pffft.h" compile="0" resource="0"
+            file="atomicengine/FFTEngine_pffft.h"/>
+      <FILE id="L6WSSm" name="MacroParameter.h" compile="0" resource="0"
+            file="atomicengine/MacroParameter.h"/>
+      <FILE id="SOnp2H" name="ParameterRouting.cpp" compile="1" resource="0"
+            file="atomicengine/ParameterRouting.cpp"/>
+      <FILE id="rv4pfG" name="ParameterRouting.h" compile="0" resource="0"
+            file="atomicengine/ParameterRouting.h"/>
+      <FILE id="gpvogY" name="README.md" compile="0" resource="1" file="atomicengine/README.md"/>
+      <FILE id="EMnrF0" name="SoundTag.cpp" compile="1" resource="0" file="atomicengine/SoundTag.cpp"/>
+      <FILE id="japW69" name="SoundTag.h" compile="0" resource="0" file="atomicengine/SoundTag.h"/>
+    </GROUP>
+    <GROUP id="{6D6D61A1-94E1-DE50-492A-0C240EE3AE4B}" name="Source">
+      <GROUP id="{CE9470EF-63D4-58CB-51B7-A63AABDDF8B5}" name="bsgl">
+        <FILE id="j97Cgs" name="GLError.h" compile="0" resource="0" file="Source/bsgl/GLError.h"/>
+        <FILE id="X5fJQc" name="FPSCounter.h" compile="0" resource="0" file="Source/bsgl/FPSCounter.h"/>
+        <FILE id="b7Yw8D" name="BufferObject.h" compile="0" resource="0" file="Source/bsgl/BufferObject.h"/>
+        <FILE id="FKQupa" name="ShaderProgram.h" compile="0" resource="0" file="Source/bsgl/ShaderProgram.h"/>
+      </GROUP>
+      <GROUP id="{4337470B-97BC-F1FC-B93F-D695D7A5B988}" name="Components">
+        <FILE id="h9zciE" name="AnimatedIcon.h" compile="0" resource="0" file="Source/Components/AnimatedIcon.h"/>
+        <FILE id="DNyYf7" name="AtomicLogo.h" compile="0" resource="0" file="Source/Components/AtomicLogo.h"/>
+        <FILE id="p9nATd" name="GradientLabel.h" compile="0" resource="0" file="Source/Components/GradientLabel.h"/>
+        <FILE id="ZvCTx3" name="HamburgerIcon.h" compile="0" resource="0" file="Source/Components/HamburgerIcon.h"/>
+        <FILE id="Ht3TT2" name="Knob.cpp" compile="1" resource="0" file="Source/Components/Knob.cpp"/>
+        <FILE id="eAZPUr" name="Knob.h" compile="0" resource="0" file="Source/Components/Knob.h"/>
+        <FILE id="H9FQH9" name="ParameterValueDisplay.cpp" compile="1" resource="0"
+              file="Source/Components/ParameterValueDisplay.cpp"/>
+        <FILE id="AOnMh4" name="ParameterValueDisplay.h" compile="0" resource="0"
+              file="Source/Components/ParameterValueDisplay.h"/>
+        <FILE id="dQp2w7" name="PresetMenu.cpp" compile="1" resource="0" file="Source/Components/PresetMenu.cpp"/>
+        <FILE id="mWeNlt" name="PresetMenu.h" compile="0" resource="0" file="Source/Components/PresetMenu.h"/>
+        <FILE id="TFxonS" name="PresetSelector.cpp" compile="1" resource="0"
+              file="Source/Components/PresetSelector.cpp"/>
+        <FILE id="Ocxipl" name="PresetSelector.h" compile="0" resource="0"
+              file="Source/Components/PresetSelector.h"/>
+        <FILE id="sQ8tRH" name="ResizeableEditor.cpp" compile="1" resource="0"
+              file="Source/Components/ResizeableEditor.cpp"/>
+        <FILE id="UgEJZI" name="ResizeableEditor.h" compile="0" resource="0"
+              file="Source/Components/ResizeableEditor.h"/>
+        <FILE id="fcyC8y" name="SwitchButton.cpp" compile="1" resource="0"
+              file="Source/Components/SwitchButton.cpp"/>
+        <FILE id="P69Uvn" name="SwitchButton.h" compile="0" resource="0" file="Source/Components/SwitchButton.h"/>
+        <FILE id="EXBW3H" name="VolumeMeter.cpp" compile="1" resource="0" file="Source/Components/VolumeMeter.cpp"/>
+        <FILE id="QUhvOC" name="VolumeMeter.h" compile="0" resource="0" file="Source/Components/VolumeMeter.h"/>
+      </GROUP>
+      <GROUP id="{E076A7FB-7DB6-92D0-90DD-F26436D478CD}" name="ParameterTree">
+        <GROUP id="{85CAA374-A318-AC06-FBF8-C5E89135488F}" name="ParameterTreeItems">
+          <FILE id="igw2BY" name="AnalysisModuleItem.cpp" compile="1" resource="0"
+                file="Source/ParameterTree/ParameterTreeItems/AnalysisModuleItem.cpp"/>
+          <FILE id="ZR6dW9" name="AnalysisModuleItem.h" compile="0" resource="0"
+                file="Source/ParameterTree/ParameterTreeItems/AnalysisModuleItem.h"/>
+          <FILE id="rroYqn" name="ParameterItem.cpp" compile="1" resource="0"
+                file="Source/ParameterTree/ParameterTreeItems/ParameterItem.cpp"/>
+          <FILE id="WFtceA" name="ParameterItem.h" compile="0" resource="0" file="Source/ParameterTree/ParameterTreeItems/ParameterItem.h"/>
+          <FILE id="qfiHBo" name="ProcessorItem.cpp" compile="1" resource="0"
+                file="Source/ParameterTree/ParameterTreeItems/ProcessorItem.cpp"/>
+          <FILE id="oe7fqt" name="ProcessorItem.h" compile="0" resource="0" file="Source/ParameterTree/ParameterTreeItems/ProcessorItem.h"/>
+          <FILE id="LydIqr" name="RootItem.h" compile="0" resource="0" file="Source/ParameterTree/ParameterTreeItems/RootItem.h"/>
+        </GROUP>
+        <FILE id="dxTzjQ" name="AnalysisReadout.h" compile="0" resource="0"
+              file="Source/ParameterTree/AnalysisReadout.h"/>
+        <FILE id="ZIr7NE" name="ParameterRoutingEditor.cpp" compile="1" resource="0"
+              file="Source/ParameterTree/ParameterRoutingEditor.cpp"/>
+        <FILE id="euZaV9" name="ParameterRoutingEditor.h" compile="0" resource="0"
+              file="Source/ParameterTree/ParameterRoutingEditor.h"/>
+        <FILE id="uiUDLv" name="ParameterTree.cpp" compile="1" resource="0"
+              file="Source/ParameterTree/ParameterTree.cpp"/>
+        <FILE id="mpTGMA" name="ParameterTree.h" compile="0" resource="0" file="Source/ParameterTree/ParameterTree.h"/>
+      </GROUP>
+      <GROUP id="{39F00DB2-D41B-FBD7-500E-0FE402C96AA7}" name="Visualiser">
+        <FILE id="Ir62YE" name="ParticleShader.h" compile="0" resource="0"
+              file="Source/Visualiser/ParticleShader.h"/>
+        <FILE id="Abxr9x" name="ScreenQuadImageShader.h" compile="0" resource="0"
+              file="Source/Visualiser/ScreenQuadImageShader.h"/>
+        <FILE id="YctMw0" name="Visualiser.cpp" compile="1" resource="0" file="Source/Visualiser/Visualiser.cpp"/>
+        <FILE id="k1xN6r" name="Visualiser.h" compile="0" resource="0" file="Source/Visualiser/Visualiser.h"/>
+        <FILE id="EzMfuk" name="VisualiserProcessor.cpp" compile="1" resource="0"
+              file="Source/Visualiser/VisualiserProcessor.cpp"/>
+        <FILE id="Ltv9XR" name="VisualiserProcessor.h" compile="0" resource="0"
+              file="Source/Visualiser/VisualiserProcessor.h"/>
+      </GROUP>
+      <FILE id="HdMngp" name="GraphicsGlobals.h" compile="0" resource="0"
+            file="Source/GraphicsGlobals.h"/>
+      <FILE id="IF8rAp" name="MessageThreadUtils.h" compile="0" resource="0"
+            file="Source/MessageThreadUtils.h"/>
+      <FILE id="hI4a4J" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="IuC6NB" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="Szad4u" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="cO0csa" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="0"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Hydra"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Hydra"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <VS2019 targetFolder="Builds/VisualStudio2019" extraDefs="_USE_MATH_DEFINES=1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release" debugInformationFormat="ProgramDatabase"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

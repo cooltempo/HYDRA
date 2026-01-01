@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AtomicPreset>
+  <Tag name="Mid"/>
+  <Tag name="Punchy"/>
+  <MacroName displayName="Reverb Mix" index="0" />
+  <MacroName displayName="Room Size" index="1" />
+  <MacroName displayName="Damping" index="2" />
+  <MacroName displayName="-" index="3" />
+  <MacroName displayName="-" index="4" />
+  <MacroName displayName="-" index="5" />
+  <MacroName displayName="-" index="6" />
+  <MacroName displayName="-" index="7" />
+  <Processor name="Reverb" factory="Reverb">
+    <Parameter id="Width" value="0.46">
+      <ParameterRouting sourceModule="peakAmplitude" sourceFeature="0" averageType="0"
+                        sourceMin="0.2446732968091965" sourceMax="1.0" destMin="1.0"
+                        destMax="0.405898243188858" skew="6.15265417098999" default="0.4995186626911163"/>
+    </Parameter>
+    <Parameter id="Damping" value="0.55">
+      <ParameterRouting sourceModule="macroParam3" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"
+                        default="0.199999988079071"/>
+    </Parameter>
+    <Parameter id="Mix" value="0.62">
+      <ParameterRouting sourceModule="macroParam1" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.0" destMax="1.0" skew="1.0"
+                        default="0.5"/>
+    </Parameter>
+    <Parameter id="RoomSize" value="0.56">
+      <ParameterRouting sourceModule="macroParam2" sourceFeature="0" averageType="2"
+                        sourceMin="0.0" sourceMax="1.0" destMin="0.07990515232086182"
+                        destMax="1.0" skew="1.0" default="0.1666666567325592"/>
+    </Parameter>
+    <Parameter id="PreDelayTime" value="0.0001000"/>
+  </Processor>
+</AtomicPreset>
